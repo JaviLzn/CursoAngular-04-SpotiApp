@@ -12,7 +12,6 @@ export class HomeComponent {
 
   constructor( private spotify: SpotifyService ) {
     this.spotify.getNewReleases().subscribe( (data: any) => {
-      console.log(data);
       this.nuevaCanciones = data;
     });
   }

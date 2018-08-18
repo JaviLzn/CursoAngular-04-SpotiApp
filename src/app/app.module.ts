@@ -9,7 +9,11 @@ import { HomeComponent } from './components/home/home.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+
+// Rutas
 import { ROUTES } from './app.routes';
+// Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
 
 
 @NgModule({
@@ -18,7 +22,8 @@ import { ROUTES } from './app.routes';
     HomeComponent,
     BuscadorComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,
